@@ -737,19 +737,55 @@
 
     <p>
         In this section, we analyze the robustness of the <strong>noise ducking time (t<sub>nd</sub>)</strong>. 
-        We analyzed various synthesized waveshapes with trapezoidal envelopes with various decay times mixed with short noise pulse with linear or exponential decay (<a href="#envelope-figures">see envelopes</a>) with similar robustness and consistency results.
+        We analyzed various synthesized waveshapes with trapezoidal envelopes mixed with short noise pulses with linear or exponential decay (<a href="#envelope-figures">see envelopes</a>), with various decay times, obtaining similar robustness and consistency results.
         The goal is to assess how stable and reliable the estimates of t<sub>nd</sub> are under these controlled conditions.
     </p>
 
+    <!-- Row of three images for Saw waves -->
+    <div style="height: 20px;"></div>
+    <p style="text-align: center; font-weight: bold; margin-top: 5px;">Sawtooth Signal</p>
+    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+        <img src="DAFx25/Hist_t_nd_saw_22ms.svg" alt="Histogram of Noise Ducking Time for Saw (22ms)"
+            style="max-width: 30%; height: auto; border: 1px solid black;">
+        <img src="DAFx25/Hist_t_nd_saw_80ms.svg" alt="Histogram of Noise Ducking Time for Saw (80ms)"
+            style="max-width: 30%; height: auto; border: 1px solid black;">
+        <img src="DAFx25/Hist_t_nd_saw_180ms.svg" alt="Histogram of Noise Ducking Time for Saw (180ms)"
+            style="max-width: 30%; height: auto; border: 1px solid black;">
+    </div>
+
+    <!-- Single image for the Triangular wave -->
+    <div style="height: 20px;"></div>
+    <p style="text-align: center; font-weight: bold; margin-top: 5px;">Triangular Signal</p>
     <div style="text-align: center; margin-top: 20px;">
         <img src="DAFx25/Hist_t_nd_triang.svg" alt="Distribution of Noise Ducking Time for Triangular Wave"
             style="max-width: 80%; height: auto; border: 1px solid black;">
-        <p style="margin-top: 10px;">
-            The figure above shows the histogram distribution of noise ducking time obtained for a 
-            synthesized triangular wave with noise of constant amplitude and variance, and the same envelope, based on 500 sounds.
-            The figure shows low values of standard deviation centered on the programmed attack duration of the synthesized sound, highlighting the consistency of the noise ducking time estimates.
-        </p>
     </div>
+
+    <!-- Row of three images for Square waves -->
+    <div style="height: 20px;"></div>
+    <p style="text-align: center; font-weight: bold; margin-top: 5px;">Square Wave Signal</p>
+    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; margin-top: 20px;">
+        <img src="DAFx25/Hist_t_nd_square_21ms.svg" alt="Histogram of Noise Ducking Time for Square (21ms)"
+            style="max-width: 30%; height: auto; border: 1px solid black;">
+        <img src="DAFx25/Hist_t_nd_square_79ms.svg" alt="Histogram of Noise Ducking Time for Square (79ms)"
+            style="max-width: 30%; height: auto; border: 1px solid black;">
+        <img src="DAFx25/Hist_t_nd_square_180ms.svg" alt="Histogram of Noise Ducking Time for Square (180ms)"
+            style="max-width: 30%; height: auto; border: 1px solid black;">
+    </div>
+
+    <!-- Row of two images for Trumpet waves -->
+    <div style="height: 20px;"></div>
+    <p style="text-align: center; font-weight: bold; margin-top: 5px;">Trumpet-Like Signal</p>
+    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+        <img src="DAFx25/Hist_t_nd_trumpet_22ms.svg" alt="Histogram of Noise Ducking Time for Trumpet (22ms)"
+            style="max-width: 45%; height: auto; border: 1px solid black;">
+        <img src="DAFx25/Hist_t_nd_trumpet_180ms.svg" alt="Histogram of Noise Ducking Time for Trumpet (180ms)"
+            style="max-width: 45%; height: auto; border: 1px solid black;">
+    </div>
+
+    <p style="margin-top: 10px;">
+        The figures above show the histogram distributions of noise ducking time obtained for different synthesized wave types with noise of constant amplitude and variance, and the same envelope, based on 500 sounds each. The results indicate low values of standard deviation centered on the programmed attack duration of the synthesized sounds, highlighting the consistency of the noise ducking time estimates across various waveforms.
+    </p>
 
     <h2>Expanding the Analysis to Other Musical Instruments</h2>
     <p>
@@ -771,14 +807,14 @@
         <div style="flex: 1 1 300px; text-align: center;">
             <h4>Noise Ducking Time (t<sub>nd</sub>)</h4>
             <img src="DAFx25/envelopes_tnd.png" alt="Illustration of Noise Ducking Time"
-                style="width: 75%; border: 1px solid black;">
+                style="max-width: 60%; height: auto; border: 1px solid black;">
         </div>
     
         <!-- Figure for attack duration (toff) -->
         <div style="flex: 1 1 300px; text-align: center;">
             <h4>Attack Duration (t<sub>off</sub>)</h4>
             <img src="DAFx25/envelopes_toff.png" alt="Illustration of Attack Duration"
-                style="width: 75%; border: 1px solid black;">
+                style="max-width: 60%; height: auto; border: 1px solid black;">
         </div>
     </div>
 
